@@ -7,3 +7,4 @@ langchain
 faiss-cpu
 pdf2image
 langchain_google_genai
+textract
