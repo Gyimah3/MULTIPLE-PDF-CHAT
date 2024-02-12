@@ -11,9 +11,9 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import textract
 
-load_dotenv()
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# Load API key from environment variables( create '.env' file in the project directory in vs code to store your API KEY, e.g GOOGLE_API_KEY=" ")
+API_KEY =st.secrets["GOOGLE_API_KEY"] # it will be 'os.getenv["GOOGLE_API_KEY"]' in Vscode
+genai.configure(api_key=API_KEY)
 
 
 
